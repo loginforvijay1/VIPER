@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="HomeCell" customModule="SampleViperArch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlP-R8-mxp">
+                        <rect key="frame" x="12" y="12" width="402" height="0.0"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" systemColor="systemBrownColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C26-UK-RM7">
+                        <rect key="frame" x="12" y="24" width="402" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wlP-R8-mxp" secondAttribute="trailing" constant="12" id="Fwh-VR-F6Z"/>
+                    <constraint firstItem="C26-UK-RM7" firstAttribute="top" secondItem="wlP-R8-mxp" secondAttribute="bottom" constant="12" id="GM0-2K-lAy"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="C26-UK-RM7" secondAttribute="bottom" constant="12" id="N2W-xP-Z7p"/>
+                    <constraint firstItem="wlP-R8-mxp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="SIK-28-0R2"/>
+                    <constraint firstItem="C26-UK-RM7" firstAttribute="leading" secondItem="wlP-R8-mxp" secondAttribute="leading" id="SIu-Sz-kRF"/>
+                    <constraint firstItem="wlP-R8-mxp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="l53-N8-lVu"/>
+                    <constraint firstItem="C26-UK-RM7" firstAttribute="trailing" secondItem="wlP-R8-mxp" secondAttribute="trailing" id="mW4-1t-oHQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDesc" destination="C26-UK-RM7" id="Sb2-HK-cmx"/>
+                <outlet property="lblTitle" destination="wlP-R8-mxp" id="9Iw-n3-cGg"/>
+            </connections>
+            <point key="canvasLocation" x="91.603053435114504" y="31.338028169014088"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
